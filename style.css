@@ -31,9 +31,7 @@ background: lightyellow;
 display: flex;
     flex-direction: column;
 }
-.php{
-    background: lightskyblue;
-}
+
 .ins{
     display: flex;
     flex-direction: column;
