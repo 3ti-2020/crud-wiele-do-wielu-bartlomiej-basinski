@@ -3,7 +3,7 @@ body{
     background: red;
     height: 100vh;
     margin: 0;
-    grid-template-rows: auto 2fr 1fr;
+    grid-template-rows: auto 5fr 1fr;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: 
     "hd hd as"
