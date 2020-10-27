@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bartłomiej Basiński</title>
     <link rel="stylesheet" href="style.css">
 <body>
-    <header><h1>header</h1></header>
+    <header><h1>Bartłomiej Basiński</h1></header>
     <main>
         <div class="php">
         <?php
