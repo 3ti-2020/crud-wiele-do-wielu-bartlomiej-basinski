@@ -1,0 +1,40 @@
+body{
+    display: grid;
+    background: red;
+    height: 100vh;
+    margin: 0;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas: 
+    "hd hd as"
+    "ma ma as"
+    "ft ft ft"
+    ;
+}
+header{
+grid-area: hd;
+background: lightcoral;
+}
+main{
+grid-area: ma;
+background: lightcyan;
+display: flex ;
+justify-content: center;
+}
+footer{
+grid-area: ft;
+background: lightslategray;
+}
+aside{
+grid-area: as;
+background: lightyellow;
+display: flex;
+    flex-direction: column;
+}
+.php{
+    background: lightskyblue;
+}
+.ins{
+    display: flex;
+    flex-direction: column;
+}
