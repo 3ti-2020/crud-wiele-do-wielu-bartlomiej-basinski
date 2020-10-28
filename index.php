@@ -11,9 +11,9 @@
     <footer><h1>footer</h1></footer>
     <aside>
     <form class='ins' action='insA.php' method='POST'>
-                Dodaj Autora:
+                Nazwisko:
                 <input type='text' name='nazwisko' >
-                Dodaj Książke:
+                tytuł:
                 <input type='text' name='Książka' >
                 <input type='submit' value='Dodaj'>
             </form>
