@@ -8,39 +8,30 @@
 <body>
     <header><h1>Bartłomiej Basiński</h1></header>
     <main>
-        <div class="php">
-        <?php
+    <?php
+            
 
-$conn= new mysqli('sql7.freemysqlhosting.net','sql7373153','jx1pxxAuGq','sql7373153');
+            $servername="mysql-bartlomiejbasinski.alwaysdata.net";
+            $username="217032";
+            $password="BaRtek2001";
+            $dbname="bartlomiejbasinski_lib";
 
-            $res= $conn->query("select * from `bibl`.`lib_tytul` join `bibl`.`lib_autor_tytul` join `bibl`.`lib_autor` where `bibl`.`lib_tytul`.`id_tytul` = `bibl`.`lib_autor_tytul`.`id_tytul` and `bibl`.`lib_autor`.`id_autor` = `bibl`.`lib_autor_tytul`.`id_autor`");
+            $conn = new mysqli($servername, $username, $password, $dbname);
 
-            echo('<table border=1>
-            <tr>
-            <th>ID</th>
-           <th>Autor</th>
-           <th>Książka</th>
-           <th>Del</th>
-            </tr>');
-
-            while($row=$res->fetch_assoc()){
-                echo("<tr>
-                <td>".$row['id_autor_tytul']."</td>
-                <td>".$row['name']."</td>
-                <td>".$row['tytul']."</td>
-                <td>
-                <form class='in' action='del.php' method='POST'>
-                
-                <input type='hidden' name='id_tytul' value='".$row['id_tytul']."'>
-                <input type='submit' value='X'>
-            </form></td>                
-                </tr>");
-            };
-
-            echo('</table>');
-
-            ?>
-        </div>
+            $result = $conn->query("SELECT * FROM lib_tytul,lib_autorzy,lib_autor_tytul where lib_tytul.tytul_id = lib_autor_tytul.id_tytul and lib_autorzy.autor_id = lib_autor_tytul.id_autor");
+            
+            echo("<table border='1'>");
+            echo("<tr>
+                <td>name</td>
+                <td>tytul</td>
+            </tr>");
+            while($wiersz = $result->fetch_assoc()){
+                echo("<tr>");
+                echo("<td>".$wiersz['nazwisko']."</td><td>".$wiersz['tytul']."</td>");
+                echo("</tr>");
+            }
+            echo("</table>");
+        ?> 
     </main>
     <footer><h1>footer</h1></footer>
     <aside>
