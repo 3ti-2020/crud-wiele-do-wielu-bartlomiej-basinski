@@ -8,7 +8,8 @@
 <body>
     <header><h1>Bartłomiej Basiński</h1></header>
     <main>
-    <?php
+        <div class="php">
+        <?php
 
             $conn= new mysqli('sql7.freemysqlhosting.net','sql7373153','jx1pxxAuGq','sql7373153');
 
@@ -39,16 +40,18 @@
             echo('</table>');
 
             ?>
+        </div>
     </main>
     <footer><h1>footer</h1></footer>
     <aside>
     <form class='ins' action='insA.php' method='POST'>
-                Nazwisko:
+                Dodaj Autora:
                 <input type='text' name='nazwisko' >
-                tytuł:
+                Dodaj Książke:
                 <input type='text' name='Książka' >
                 <input type='submit' value='Dodaj'>
             </form>
+            
     </aside>
 </body>
 </html>
