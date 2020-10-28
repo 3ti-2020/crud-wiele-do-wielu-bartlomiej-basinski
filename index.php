@@ -11,7 +11,7 @@
         <div class="php">
         <?php
 
-            $conn= new mysqli('sql7.freemysqlhosting.net','sql7373153','jx1pxxAuGq','sql7373153');
+$conn= new mysqli('sql7.freemysqlhosting.net','sql7373153','jx1pxxAuGq','sql7373153');
 
             $res= $conn->query("select * from `bibl`.`lib_tytul` join `bibl`.`lib_autor_tytul` join `bibl`.`lib_autor` where `bibl`.`lib_tytul`.`id_tytul` = `bibl`.`lib_autor_tytul`.`id_tytul` and `bibl`.`lib_autor`.`id_autor` = `bibl`.`lib_autor_tytul`.`id_autor`");
 
