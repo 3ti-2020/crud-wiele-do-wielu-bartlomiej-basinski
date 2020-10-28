@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 <body>
     <header><h1>Bartłomiej Basiński</h1></header>
-    <main></main>
+    <main><h1>main</h1></main>
     <footer><h1>footer</h1></footer>
     <aside>
     <form class='ins' action='insA.php' method='POST'>
