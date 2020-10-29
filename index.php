@@ -13,7 +13,7 @@
 
             $servername="mysql-bartlomiejbasinski.alwaysdata.net";
             $username="217032";
-            $password="BaRtek2001";
+            $password="";
             $dbname="bartlomiejbasinski_lib";
 
             $conn = new mysqli($servername, $username, $password, $dbname);
