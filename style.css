@@ -1,0 +1,104 @@
+body{
+    display: grid;
+    height: 120vh;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header aside"
+    " nav nav nav aside"
+    " nav nav nav aside"
+    " nav nav nav aside";
+    flex-wrap: wrap;
+}
+
+
+main{
+    grid-area: main;
+    background: lightcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header{
+    grid-area: header;
+    background: lightcoral;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+aside{
+    grid-area: aside;
+    background: lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{
+    grid-area: nav;
+    background-color:lightgreen ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.td{
+    border: 1px solid black;
+    background:lightsteelblue;
+    margin: 5px;
+    padding: 10px;
+}
+
+.th{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 25px;
+    background:lightsteelblue;
+    font-size: 25px;
+}
+.tr{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 25px;
+    background:lightsteelblue;
+    font-size: 25px;
+}
+.h{
+    font-size: 50px;
+    color: lightgreen;
+}
+.buttona{
+
+    background: none;
+    border: none;
+    outline: none;
+    background-color: lightgreen;
+    padding: 15px;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
