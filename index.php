@@ -10,9 +10,9 @@
 
 <header>
 
-    <h1>Bartłomiej Basiński gr2</H1>
+    <h1>Bartłomiej Basiński gr2</h1>
 
-
+    <a href="/card/index.html">Karty</a>
 </header>
 
 <aside>

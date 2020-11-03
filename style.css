@@ -16,10 +16,7 @@ header{
     grid-area: header;
     background: lightcoral;
     display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    
+    justify-content: space-between;
 }
 
 aside{
@@ -61,7 +58,10 @@ nav{
     background:lightsteelblue;
     font-size: 25px;
 }
-
+.h{
+    font-size: 50px;
+    color: lightgreen;
+}
 .buttona{
 
     background: none;
@@ -76,9 +76,6 @@ nav{
 
 
 }
-
-
-
 
 
 
