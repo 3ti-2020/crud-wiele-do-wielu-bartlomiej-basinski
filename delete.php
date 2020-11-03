@@ -10,9 +10,6 @@ $dbname="bartlomiejbasinski_lib";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 
-
-$conn= new mysqli($servername,$username,$password,$dbname);
-
 $sql="DELETE FROM `lib_autor_tytul` WHERE `lib_autor_tytul`.`id_autor_tytul` = '".$_POST['ID']."'";
 
 

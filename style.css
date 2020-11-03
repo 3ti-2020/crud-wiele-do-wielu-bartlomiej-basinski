@@ -12,17 +12,6 @@ body{
     flex-wrap: wrap;
 }
 
-
-main{
-    grid-area: main;
-    background: lightcyan;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 header{
     grid-area: header;
     background: lightcoral;
@@ -72,7 +61,10 @@ nav{
     background:lightsteelblue;
     font-size: 25px;
 }
-
+.h{
+    font-size: 50px;
+    color: lightgreen;
+}
 .buttona{
 
     background: none;
