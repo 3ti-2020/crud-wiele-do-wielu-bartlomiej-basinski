@@ -1,17 +1,24 @@
 body{
     display: grid;
-    height: 120vh;
     margin: 0;
+    height: 120vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
     grid-template-areas:
     "header header header aside"
-    " nav nav nav aside"
-    " nav nav nav aside"
-    " nav nav nav aside";
-    flex-wrap: wrap;
+    " main main main aside"
+    " main main main aside"
+    " main main main aside"
+    " footer footer footer  footer";
 }
-
+footer{
+    grid-area:footer ;
+    background: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
 header{
     grid-area: header;
     background: lightcoral;
@@ -28,8 +35,8 @@ aside{
     flex-direction: column;
 }
 
-nav{
-    grid-area: nav;
+main{
+    grid-area: main;
     background-color:lightgreen ;
     display: flex;
     justify-content: center;
@@ -76,6 +83,21 @@ nav{
 
 
 }
+.btnCol{
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 7px;
+    background: darkgray;
+    color: white;
+    font-size:  1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+}
+.btnCol:hover{
+background: black;
+}
+
 
 
 

@@ -20,13 +20,8 @@
 <h1>Insert</h1> 
 
 <form class="form" action="insert.php" method="POST">
-    
     <input class="text" type="text" name="nazwisko" placeholder="nazwisko"></br>
-    
     <input class="text" type="text" name="tytul" placeholder="tytul"></br>
-
-    
-
     <input class="button" type="submit" value="Dodaj">
     </form>
 
@@ -36,7 +31,7 @@
 </aside>
 
 
-<nav>
+<main>
 
 
 <?php
@@ -88,7 +83,11 @@ echo("</table>");
 ?>
 
 
-</nav>
+</main>
+    <footer>
     
+    <button type="button" class="btnCol">Zmiana koloru</button> 
+    </footer>
 </body>
+<script src="script.js"></script>
 </html>
