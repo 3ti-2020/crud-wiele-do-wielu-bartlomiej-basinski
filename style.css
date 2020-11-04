@@ -23,7 +23,8 @@ header{
     grid-area: header;
     background: lightcoral;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 aside{
@@ -97,8 +98,45 @@ main{
 .btnCol:hover{
 background: black;
 }
+.karty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 5rem;
+    border: 3px solid red;
+    border-radius: 7px;
+    background: darkgray;
+    color: white;
+    font-size:  1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.karty:hover{
+    background: black;
+    }
 
-
+.Github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 5rem;
+    border: 3px solid red;
+    border-radius: 7px;
+    background: darkgray;
+    color: white;
+    font-size:  1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none; 
+}
+.Github:hover{
+    background: black;
+    }
 
 
 

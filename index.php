@@ -9,10 +9,11 @@
 <body>
 
 <header>
+<a class="Github"href="https://github.com/3ti-2020/crud-wiele-do-wielu-bartlomiej-basinski/tree/main">Do Gtihuba</a>
 
     <h1>Bartłomiej Basiński gr2</h1>
 
-    <a href="/card/index.html">Karty</a>
+    <a class="karty"href="/card/index.html">Karty</a>
 </header>
 
 <aside>
