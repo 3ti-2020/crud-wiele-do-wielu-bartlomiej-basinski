@@ -16,4 +16,4 @@ $sql="DELETE FROM `lib_autor_tytul` WHERE `lib_autor_tytul`.`id_autor_tytul` = '
 
 mysqli_query($conn, $sql);
 
-header("Location:index.php");
+header("Location:strona.php");

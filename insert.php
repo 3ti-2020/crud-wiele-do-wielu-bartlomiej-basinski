@@ -31,6 +31,6 @@ $sql=" INSERT INTO lib_autor_tytul (id_autor_tytul, id_autor,id_tytul) values (N
 
 mysqli_query($conn, $sql);
 
-header("Location:index.php");
+header("Location:strona.php");
 
 ?>
