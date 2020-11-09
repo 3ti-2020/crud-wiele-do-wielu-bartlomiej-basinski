@@ -26,14 +26,14 @@ if(isset($_GET['akcja']) && $_GET['akcja'] == 'wyloguj'){
 };
 if(!isset($_SESSION['zalogowany'])){
 ?>
-<form action='strona.php' method='POST'>
+<form action='menu.php' method='POST'>
     <input type='text' placeholder='login' name='login'>
     <input type='password' placeholder='password' name='pass'>
     <input class='btn' type='submit' value='zaloguj'>
 </form>
 <?php
 }else{
-    echo"<form action='strona.php' method='POST'>
+    echo"<form action='menu.php' method='POST'>
     <input type='text' placeholder='login' name='login'>
     <input type='password' placeholder='password' name='pass'>
     <input class='btn' type='submit' value='zaloguj'>

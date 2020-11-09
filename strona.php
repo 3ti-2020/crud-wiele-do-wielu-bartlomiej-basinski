@@ -1,15 +1,4 @@
-<?php
-session_start();
 
-if(!empty($_POST['login'])){
-    if($_POST['login'] == 'a'){
-
-if(isset($_POST['pass']) && $_POST['pass'] == 'a'){
-    $_SESSION['zalogowany'] = 1;
-}
-
-if(isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] = 1){
-?>
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +10,34 @@ if(isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] = 1){
 <body>
 <header>
 <a class="Github"href="https://github.com/3ti-2020/crud-wiele-do-wielu-bartlomiej-basinski/tree/main">Do Gtihuba</a>
+<a class="Github"href="index.php">Do Logowania</a>
 <h1>Bartłomiej Basiński gr2</h1>
 <h3>Zalogowano</h3>
-<a class="karty" href='index.php?akcja=wyloguj'>Wyloguj</a>
-<a class="karty" href="/card/index.html"> Karty</a>
+
+<?php
+session_start();
+
+if(isset($_GET['akcja']) && $_GET['akcja'] == 'wyloguj'){
+    unset($_SESSION['zalogowany']);
+};
+if(!isset($_SESSION['zalogowany'])){
+?>
+<form action='menu.php' method='POST'>
+    <input  type='hidden' placeholder='login' name='login' value='a'>
+    <input type='hidden' placeholder='password' name='pass' value='a'>
+    <input class='Github' type='submit' value='Menu'>
+</form>
+<?php
+}else{
+    echo"<form  action='menu.php' method='POST'>
+    <input type='hidden'  placeholder='login' name='login' value='a'>
+    <input type='hidden'  placeholder='password' name='pass' value='a'>
+    <input class='Github' type='submit' value='Menu'>
+</form>";
+   
+}
+?>
+
 </header>
 <aside>
 <h2>Insert:</h2>
@@ -66,7 +79,7 @@ while($row=$result->fetch_assoc()){
     echo("<td class='td'>  <form class='form' action='delete.php' method='POST'>
 
     <input class='text' type='hidden' name='ID' value='$row[id_autor_tytul]' placeholder='ID'></br>
-    <input class='buttona' type='submit' value='Usun'> </td>");
+    <div class='btnt'><input class='buttona' type='submit' value='Usun'></div> </td>");
     
     echo("</tr>");
 }
@@ -79,13 +92,3 @@ echo("</table>");
 </main>
 </body>
 </html>
-<?php
-}else{
-    header("Location:index.php");
-}
-}
-}else{
-    header("Location:index.php");
-}
-
-?>

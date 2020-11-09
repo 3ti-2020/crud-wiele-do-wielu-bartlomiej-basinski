@@ -1,19 +1,14 @@
-@keyframes animacja{
-  0%{height: 150px;
-  top: 500px;}
-  100%{height: 400px;
-    top: 250px;}
-}
-*{
-  font-family: 'Sofia', sans-serif;
-}
+
 body{
-  background: lightcyan;
+  animation: KOLOR 120S infinite;
+  display: flex;
+justify-content: center;
+  align-items: center;
+  
 }
 .cont{
     display: flex;
     height: 100vh;
-    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     padding: 20px;
@@ -28,17 +23,8 @@ body{
 .card1{
   position: relative;
   height: 500px;
-  width: 300px;
-  background-image: url("Egipt.jpg");
-  background-size: cover;
-  border-radius: 20px 20px 0px 0px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.card2{
-  position: relative;
-  height: 500px;
-  width: 300px;
-  background-image: url("shutterstock_509755213-miniatura.jpg");
+  width: 400px;
+  background-image: url("");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -46,26 +32,27 @@ body{
 .card3{
   position: relative;
   height: 500px;
-  width: 300px;
-  background-image: url("91387999-1DEF-48F5-AA28-2FEFB0F09FDA_w1071_s.jpg");
+  width: 400px;
+  background-image: url("");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.card4{
+.card2{
   position: relative;
   height: 500px;
-  width: 300px;
-  background-image: url("warszawa.jpg");
+  width: 400px;
+  background-image: url("");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 .niebieskie{
-  background: #0a4870;
+  background: lightgreen;
   opacity: 0;
   height: 500px;
-  width: 300px;
+  width: 400px;
   position: absolute;
   top: 0px;
   border-radius: 20px 20px 0px 0px;
@@ -87,10 +74,10 @@ body{
 }
 .card{
     position: absolute;
-    top: 500px;
+    top: 420px;
     background: lightgray;
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 120px;
     border-radius: 0px 0px 20px 20px;
     color:darkgoldenrod;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -109,11 +96,6 @@ body{
   align-items: center;
   flex-direction: column;
 }
-.linia{
-  background: darkblue;
-  height: 3px;
-  width: 250px;
-  border-radius: 50px;
 }
 .wiado{
   margin: 20px;
@@ -127,18 +109,18 @@ body{
 .ukryty{
   display: none;
   position: absolute;
-  top: 150px;
+  top: 80px;
 }
 .kwadraty{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+
 }
 .kwadrat{
-  height: 90px;
-  width: 90px;
+  height: 60px;
+  width: 60px;
   background: white;
   border-radius: 10px 10px 10px 10px;
   display: flex;
@@ -154,6 +136,7 @@ body{
   padding: 10px;
   font-size: 25px;
   color:red;
+  margin: 10px;
 }
 .kwadrat.a{
   display: flex;
@@ -162,6 +145,18 @@ body{
   flex-direction: column;
   padding: 10px;
   font-size: 25px;
+  color:red;
+  margin: 10px;
+}
+.kwadrat.c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 25px;
+  color:red;
+  margin: 10px;
 }
 .wiado{
   color: grey;
@@ -188,9 +183,8 @@ body{
 
 
 .calosc:hover .card{
-    animation: animacja 1s 1;
-    height: 400px;
-    top: 250px;
+    height: 250px;
+    top: 350px;
   }
   .calosc:hover .ukryty{
     display: block;
@@ -216,4 +210,34 @@ body{
   color: #ec992c;
   transition: 1s;
   cursor: pointer;
+}
+.Github{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 8rem;
+  border: 3px solid red;
+  border-radius: 7px;
+  background: darkgray;
+  color: white;
+  font-size:  1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none; 
+}
+.Github:hover{
+  background: black;
+  }
+ 
+@keyframes KOLOR {
+  0% {background:lightcoral;}
+  17 % {background: orange;}
+  34% {background: gold;}
+  51% {background: yellow;}
+  68% {background: yellowgreen;}
+  85% {background:lightgreen;}
+  100%{background:lightcoral;}
+  }
 }

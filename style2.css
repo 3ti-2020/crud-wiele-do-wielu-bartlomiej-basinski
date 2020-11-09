@@ -90,17 +90,27 @@ main{
 .buttona{
 
     background: none;
-    border: none;
+    border: 3px solid red;
     outline: none;
-    background-color: lightgreen;
+    background: darkgray;
     padding: 15px;
     font-size: 20px;
     width: 100px;
     border-radius: 10px;
     transition: 0.3s;
-
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
 
 }
+.buttona:hover{
+    background: black;
+    }
 .btnCol{
     padding: 20px;
     border: 3px solid red;
@@ -111,6 +121,7 @@ main{
     text-transform: capitalize;
     cursor: pointer;
     outline: none;
+    
 }
 .btnCol:hover{
 background: black;
@@ -140,7 +151,7 @@ background: black;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 5rem;
+    width: 8rem;
     border: 3px solid red;
     border-radius: 7px;
     background: darkgray;
@@ -158,28 +169,11 @@ background: black;
         display: flex;
         flex-direction: column;
 }
-.log{
+.btnt{
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
-    width: 5rem;
-    border: 3px solid red;
-    border-radius: 7px;
-    background: darkgray;
-    color: white;
-    font-size:  1rem;
-    text-transform: capitalize;
-    cursor: pointer;
-    outline: none;
-    text-decoration: none; 
+    align-items: center;
 }
-.log:hover{
-    background: black;
-    }
-
-
-
 
 
 
