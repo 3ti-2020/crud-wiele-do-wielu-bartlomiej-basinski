@@ -103,7 +103,7 @@ main{
 }
 .btnCol{
     padding: 20px;
-    border: 3px solid red;
+    border: 3px solid darkgoldenrod;
     border-radius: 7px;
     background: darkgray;
     color: white;
@@ -121,7 +121,7 @@ background: black;
     justify-content: center;
     padding: 20px;
     width: 5rem;
-    border: 3px solid red;
+    border: 3px solid darkgoldenrod;
     border-radius: 7px;
     background: darkgray;
     color: white;
@@ -142,7 +142,7 @@ background: black;
     justify-content: center;
     padding: 20px;
     width: 8rem;
-    border: 3px solid red;
+    border: 3px solid darkgoldenrod;
     border-radius: 7px;
     background: darkgray;
     color: white;
@@ -165,7 +165,7 @@ background: black;
     justify-content: center;
     padding: 20px;
     width: 5rem;
-    border: 3px solid red;
+    border: 3px solid darkgoldenrod;
     border-radius: 7px;
     background: darkgray;
     color: white;

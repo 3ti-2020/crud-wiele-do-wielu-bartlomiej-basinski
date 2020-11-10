@@ -5,10 +5,6 @@ $username="217032";
 $password="BaRtek2001";
 $dbname="bartlomiejbasinski_lib";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-
-
 $conn= new mysqli($servername,$username,$password,$dbname);
 
 $sqlGetId = "SELECT LAST_INSERT_ID()";

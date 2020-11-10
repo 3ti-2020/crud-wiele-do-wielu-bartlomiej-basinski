@@ -31,6 +31,8 @@ if(isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] = 1){
 <a class="Github"href="index.php">Do logowania</a>
 <a class="Github"href="strona.php">Tabela</a>
 <a class="Github"href="card/index.php">karty</a>
+<a class="Github"href="wypozyczneia.php">wypozyczneia</a>
+<a class="Github"href="uzytkownicy.php">uzytkownicy</a>
 </main>
 </body>
 </html>

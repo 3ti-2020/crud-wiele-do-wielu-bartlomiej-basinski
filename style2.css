@@ -132,7 +132,7 @@ background: black;
     justify-content: center;
     padding: 20px;
     width: 5rem;
-    border: 3px solid red;
+    border: 3px solid darkgoldenrod;
     border-radius: 7px;
     background: darkgray;
     color: white;
@@ -147,12 +147,13 @@ background: black;
     }
 
 .Github{
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     width: 8rem;
-    border: 3px solid red;
+    border: 3px solid darkgoldenrod;
     border-radius: 7px;
     background: darkgray;
     color: white;
@@ -162,9 +163,6 @@ background: black;
     outline: none;
     text-decoration: none; 
 }
-.Github:hover{
-    background: black;
-    }
 .insert{
         display: flex;
         flex-direction: column;
