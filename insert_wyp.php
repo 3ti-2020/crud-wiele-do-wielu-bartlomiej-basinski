@@ -6,10 +6,10 @@
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $ksiazka=$_POST['tytul'];
+    $tytul=$_POST['tytul'];
     $uzytkownik=$_POST['uzytkownik'];
 
-    $sql = "INSERT INTO `lib_wypozyczenia`( `id_tytul`, `id_uzytkownik`, `data_wypozyczenia`, `termin_oddania`) VALUES ($ksiazka, $uzytkownik, NOW(), NOW()+INTERVAL 2 WEEK)";
+    $sql = "INSERT INTO `lib_wypozyczenia`( `id_tytul`, `id_uzytkownik`, `data_wypozyczenia`, `termin_oddania`) VALUES ($tytul, $uzytkownik, NOW(), NOW()+INTERVAL 2 WEEK)";
 
     echo($sql);
 
