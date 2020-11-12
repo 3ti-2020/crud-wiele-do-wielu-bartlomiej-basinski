@@ -29,7 +29,7 @@ if(isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] = 1){
 <main>
 <a class="Github"href="https://github.com/3ti-2020/crud-wiele-do-wielu-bartlomiej-basinski/tree/main">Do Gtihuba</a>
 <a class="Github"href="index.php">Do logowania</a>
-<a class="Github"href="strona.php">Tabela</a>
+<a class="Github"href="strona.php">książki</a>
 <a class="Github"href="card/index.php">karty</a>
 <a class="Github"href="wypozyczneia.php">wypozyczneia</a>
 <a class="Github"href="uzytkownicy.php">uzytkownicy</a>

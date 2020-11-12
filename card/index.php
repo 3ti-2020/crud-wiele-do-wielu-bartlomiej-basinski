@@ -29,6 +29,7 @@ if(!isset($_SESSION['zalogowany'])){
    
 }
 ?></header>
+<main>
     <div class="cont">
     <div class="calosc">
     <div class="card1">
@@ -108,6 +109,7 @@ if(!isset($_SESSION['zalogowany'])){
 
     </div>
     <div class="poletxt" id="text"></div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

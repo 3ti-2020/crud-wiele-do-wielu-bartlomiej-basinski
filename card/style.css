@@ -1,9 +1,13 @@
 
 body{
   animation: KOLOR 120S infinite;
-  display: flex;
-justify-content: center;
-  align-items: center;
+  display: grid;
+grid-template-rows: auto 1fr;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"hd"
+"ma"
+;
   
 }
 .cont{
@@ -13,6 +17,15 @@ justify-content: center;
     flex-direction: row;
     padding: 20px;
     flex-wrap: wrap;
+}
+header{
+  grid-area: hd;
+}
+main{
+  display: flex;
+justify-content: center;
+  align-items: center;
+  grid-area: ma;
 }
 .calosc{
   margin: 70px;
