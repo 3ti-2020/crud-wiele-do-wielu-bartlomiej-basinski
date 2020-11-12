@@ -14,4 +14,4 @@ $sql="DELETE FROM `lib_wypozyczenia` WHERE `id_wypozyczneia` = '".$_POST['ID']."
 
 mysqli_query($conn, $sql);
 
-header("Location:wypozyczenia.php");
+header("Location: wypozyczneia.php");

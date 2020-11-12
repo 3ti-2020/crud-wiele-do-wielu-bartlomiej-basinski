@@ -40,15 +40,34 @@ if(!isset($_SESSION['zalogowany'])){
 
 </header>
 <aside>
-<h2>Insert:</h2>
-<form class="form" action="insert_wyp.php" method="POST">
-    <input class="text" type="text" name="imie" placeholder="imie"></br>
-    <input class="text" type="text" name="nazwisko" placeholder="nazwisko"></br>
-    <input class="text" type="text" name="tytul" placeholder="tylul"></br>
-    <input class="text" type="date" name="data_wypozyczneia" ></br>
-    <input class="text" type="date" name="termin_oddania" ></br>
-    <input class="button" type="submit" value="Dodaj">
-    </form>
+<form action="insert_wyp.php" method="POST" >
+                            <h2>książka:</h2>
+                            <?php
+                            $servername="mysql-bartlomiejbasinski.alwaysdata.net";
+                            $username="217032";
+                            $password="BaRtek2001";
+                            $dbname="bartlomiejbasinski_lib";
+                            
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                                $result3 = $conn->query("SELECT * FROM lib_tytul,lib_autorzy,lib_autor_tytul where lib_tytul.id_tytul  = lib_autor_tytul.id_tytul and lib_autorzy.autor_id = lib_autor_tytul.id_autor");
+                                echo("<select name='tytul'>");
+                                while($wiersz = $result3->fetch_assoc()){
+                                    echo("<option value='".$wiersz['id_autor_tytul']."' name='tytul'>".$wiersz['nazwisko']."  ".$wiersz['tytul']."</option>");
+                                }
+                                echo("</select>");
+                            ?>
+                            <h2>użytkownik:</h2> 
+                            <?php
+                                $result4 = $conn->query("SELECT * FROM lib_uzytkownicy");
+                                echo("<select name='uzytkownik'>");
+                                while($wiersz2 = $result4->fetch_assoc()){
+                                    echo("<option value='".$wiersz2['id_uzytkownika']."' name='uzytkownik'>".$wiersz2['imie']."  ".$wiersz2['nazwisko']."</option>");
+                                }
+                                echo("</select>");
+                            ?>
+                            <br>
+                            <input type="submit" value="WYPOŻYCZ">
+                        </form>
 </aside>
 
 <main>
@@ -71,7 +90,7 @@ echo("<tr class='tr'>
 <th class='th'>tytul</th>
 <th class='th'>data_wypozyczenia</th>
 <th class='th'>termin_oddania</th>
-<th class='th'>Usuń</th>
+<th class='th'>Oddaj</th>
 </tr>");
 
 
@@ -88,7 +107,7 @@ while($row=$result->fetch_assoc()){
     echo("<td class='td'>  <form class='form' action='delete_wyp.php' method='POST'>
 
     <input type='hidden' name='ID' value='$row[id_wypozyczneia]' placeholder='ID'></br>
-    <div class='btnt'><input class='buttona' type='submit' value='Usun'></div> </td>");
+    <div class='btnt'><input class='buttona' type='submit' value='Oddaj'></div> </td>");
     
     echo("</tr>");
 }
