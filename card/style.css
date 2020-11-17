@@ -1,6 +1,6 @@
 
 body{
-  animation: KOLOR 120S infinite;
+  animation: KOLOR 120S infinite;*/
   display: grid;
 grid-template-rows: auto 1fr;
 grid-template-columns: 1fr;
@@ -8,7 +8,7 @@ grid-template-areas:
 "hd"
 "ma"
 ;
-  
+
 }
 .cont{
     display: flex;
@@ -37,32 +37,32 @@ justify-content: center;
   position: relative;
   height: 500px;
   width: 400px;
-  background-image: url("");
+  background: url("Linux_Mint_logo_without_wordmark.svg.png");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 .card3{
   position: relative;
   height: 500px;
   width: 400px;
-  background-image: url("");
+  background: url("1200px-Debian-OpenLogo.svg.png");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  
 }
 .card2{
   position: relative;
   height: 500px;
   width: 400px;
-  background-image: url("");
+  background: url("ubuntu-logo32.png");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  
 }
 
 .niebieskie{
-  background: lightgreen;
+ 
   opacity: 0;
   height: 500px;
   width: 400px;
@@ -147,9 +147,11 @@ justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
+  width: 90px ;
   font-size: 25px;
   color:red;
   margin: 10px;
+  text-decoration: none; 
 }
 .kwadrat.a{
   display: flex;
@@ -157,9 +159,11 @@ justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
+  width: 90px ;
   font-size: 25px;
   color:red;
   margin: 10px;
+  text-decoration: none; 
 }
 .kwadrat.c{
   display: flex;
@@ -167,9 +171,11 @@ justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
+  width: 90px ;
   font-size: 25px;
   color:red;
   margin: 10px;
+  text-decoration: none; 
 }
 .wiado{
   color: grey;

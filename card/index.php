@@ -43,9 +43,9 @@ if(!isset($_SESSION['zalogowany'])){
         </div>
         <div class="ukryty">
           <div class="kwadraty">
-          <div class="kwadrat a"><b></b></div>
-          <div class="kwadrat b"><b></b></div>
-          <div class="kwadrat c"><b></b></div>
+          <a class="kwadrat b" href="https://pl.wikipedia.org/wiki/Linux_Mint">Mint</a>
+          <a class="kwadrat b" href="https://pl.wikipedia.org/wiki/Linux_Mint">Twórcy</a>
+          <a class="kwadrat b" href="https://www.linuxmint.com/download.php">pobranie</a>
           </div>
           <div class="tekstowy">
             <p class="wiado"></p>
@@ -60,6 +60,7 @@ if(!isset($_SESSION['zalogowany'])){
       <div class="niebieskie">
       </div>
       <div class="card">
+      
         <div class="gorny">
           <h2></h2>
         
@@ -67,9 +68,9 @@ if(!isset($_SESSION['zalogowany'])){
         </div>
         <div class="ukryty">
           <div class="kwadraty">
-          <div class="kwadrat a"><b></b></div>
-          <div class="kwadrat b"><b></b></div>
-          <div class="kwadrat c"><b></b></div>
+          <a class="kwadrat b" href="https://pl.wikipedia.org/wiki/Ubuntu">Ubuntu</a>
+          <a class="kwadrat b" href="https://pl.wikipedia.org/wiki/Canonical">Twórcy</a>
+          <a class="kwadrat b" href="https://ubuntu.com/download/desktop">pobranie</a>
           </div>
           <div class="tekstowy">
             <p class="wiado"></p>
@@ -91,9 +92,9 @@ if(!isset($_SESSION['zalogowany'])){
         </div>
         <div class="ukryty">
           <div class="kwadraty">
-          <div class="kwadrat a"><b></b></div>
-          <div class="kwadrat b"><b></b></div>
-          <div class="kwadrat c"><b></b></div>
+          <a class="kwadrat b" href="https://pl.wikipedia.org/wiki/Debian">Debian</a>
+          <a class="kwadrat b" href="https://pl.wikipedia.org/wiki/Debian">Twórcy</a>
+          <a class="kwadrat b" href="https://www.debian.org/CD/http-ftp/index.pl.html">pobranie</a>
           </div>
           <div class="tekstowy">
             <p class="wiado"></p>
