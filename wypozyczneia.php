@@ -56,7 +56,7 @@ if(!isset($_SESSION['zalogowany'])){
                                 }
                                 echo("</select>");
                             ?>
-                            <h2>użytkownik:</h2> 
+                            <h2>użytkownik:</h2>
                             <?php
                                 $result4 = $conn->query("SELECT * FROM lib_uzytkownicy");
                                 echo("<select name='uzytkownik'>");
