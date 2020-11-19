@@ -107,7 +107,7 @@ while($row=$result->fetch_assoc()){
     echo("<td class='td'>".$row['data_wypozyczenia']."</td>");
     echo("<td class='td'>".$row['termin_oddania']."</td>");
     echo("<td class='td'>");
-    echo dateDifference("2020-10-15", "2020-10-12" , $differenceFormat = '%a' );
+    echo dateDifference($row['data_wypozyczenia'], $row['termin_oddania'], $differenceFormat = '%a' );
     echo("</td>");
     echo("<td class='td'>  <form class='form' action='delete_wyp.php' method='POST'>
 
