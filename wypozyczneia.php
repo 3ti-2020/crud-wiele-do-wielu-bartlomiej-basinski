@@ -90,7 +90,9 @@ echo("<tr class='tr'>
 <th class='th'>tytul</th>
 <th class='th'>data_wypozyczenia</th>
 <th class='th'>termin_oddania</th>
+<th class='th'>dni do oddania</th>
 <th class='th'>Oddaj</th>
+
 </tr>");
 
 
@@ -104,15 +106,27 @@ while($row=$result->fetch_assoc()){
     echo("<td class='td'>".$row['tytul']."</td>");
     echo("<td class='td'>".$row['data_wypozyczenia']."</td>");
     echo("<td class='td'>".$row['termin_oddania']."</td>");
+    echo("<td class='td'>");
+    echo dateDifference("2020-10-15", "2020-10-12" , $differenceFormat = '%a' );
+    echo("</td>");
     echo("<td class='td'>  <form class='form' action='delete_wyp.php' method='POST'>
 
     <input type='hidden' name='ID' value='$row[id_wypozyczneia]' placeholder='ID'></br>
     <div class='btnt'><input class='buttona' type='submit' value='Oddaj'></div> </td>");
     
     echo("</tr>");
+    
 }
     
-
+function dateDifference($date_1 , $date_2 , $differenceFormat = '%a' ){
+    $datetime1 = date_create($date_1);
+    $datetime2 = date_create($date_2);
+   
+    $interval = date_diff($datetime1, $datetime2);
+   
+    return $interval->format($differenceFormat);
+   
+}
 
 echo("</table>");
     ?>
