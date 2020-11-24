@@ -106,9 +106,19 @@ while($row=$result->fetch_assoc()){
     echo("<td class='td'>".$row['tytul']."</td>");
     echo("<td class='td'>".$row['data_wypozyczenia']."</td>");
     echo("<td class='td'>".$row['termin_oddania']."</td>");
+   if ($row['termin_oddania'] > date("Y-m-d") ){
     echo("<td class='td'>");
     echo dateDifference( date("Y-m-d"), $row['termin_oddania'], $differenceFormat = '%a' );
+    echo("<span> dni do oddania</span>");
     echo("</td>");
+   }else{
+    echo("<td class='td_s'>");
+    echo("<span>spóźnienie: </span>");
+    echo dateDifference( date("Y-m-d"), $row['termin_oddania'], $differenceFormat = '%a' );
+    echo("<span> dni</span>");
+    echo("</td>");
+}
+
     echo("<td class='td'>  <form class='form' action='delete_wyp.php' method='POST'>
 
     <input type='hidden' name='ID' value='$row[id_wypozyczneia]' placeholder='ID'></br>
