@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="list-cnt">
+        <header class="list-header">
+            <h2 class="list-title">
+                Lista zadań
+            </h2>
+            <form class="form" id="todoForm">
+            <div class="form-row">
+                <label class="form-label" for="todoMessage">Podaj treść zadania</label>
+                <textarea class="form-message" name="todoMessage" id="todoMessage"></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="button form-button">Dodaj</button>
+            </div>
+        </form>
+        </header>
+        
+    
+        <div class="list" id="lista">
+        </div>
+    </section>
+    <script src="todo.js"></script>
+</body>
+</html>
