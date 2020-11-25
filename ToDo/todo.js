@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const list = document.querySelector('#list');
 
     function addTask(text) {
-        list.innerHTML += "<h1>" + todoTextarea.value + "<h1><br>";
+        list.innerHTML += "<h1>" + todoTextarea.value + "</h1>";
         
     }
 
