@@ -19,7 +19,6 @@
 </aside>
 <main>
 <div class="pytanie">
-
 <article class="question">
     <h3 class="question_title">Z9. DOM dostarcza metod i własności, które w języku JavaScript pozwalają na</h3>
     <ol type="a" class="question_answerList">
@@ -37,8 +36,7 @@
   </article>
 </div>
 <div class="pytanie">
-
-<img src="obrzad/zadanie26.png">
+<img src="obrzad/zadanie26.png" width="65%">
 <article class="question">
     <h3 class="question_title">Z26. Witryna internetowa ma mieć przedstawioną strukturę bloków. Aby uzyskać ten układ, należy znacznikom
 sekcji przypisać właściwości w następujący sposób:</h3>

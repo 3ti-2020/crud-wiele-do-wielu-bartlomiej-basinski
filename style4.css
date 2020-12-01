@@ -27,10 +27,11 @@
 .pop{
     font-size: 23px;
 }
-body{
-    display: grid;
+@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
     margin: 0;
-    height: 120vh;
+    height: 200vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 1fr auto;
     grid-template-areas:
@@ -38,7 +39,21 @@ body{
     " main main main main"
     " main main main main"
     " main main main main"
-    " footer footer footer  footer";
+    " main main main main"
+    }
+  }
+body{
+    display: grid;
+    margin: 0;
+    height: 150vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-areas:
+    "header header header header"
+    " main main main main"
+    " main main main main"
+    " main main main main"
+    " main main main main"
 }
 footer{
     grid-area:footer ;
@@ -76,8 +91,16 @@ main{
 
 .pytanie{
     margin-left: 40px;
-    margin-top: 10px;
-    margin-right: 25%;
+    margin-top: 30px;
+    margin-right: 35%;
+    background: lightblue;
+    border: solid black 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
 }
 }
 .td{
