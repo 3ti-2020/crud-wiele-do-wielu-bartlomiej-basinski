@@ -33,7 +33,7 @@
     margin: 0;
     height: 200vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "header header header header"
     " main main main main"
@@ -87,20 +87,33 @@ main{
     background-color:lightgreen ;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pytanie{
-    margin-left: 40px;
-    margin-top: 30px;
-    margin-right: 35%;
+    margin-top: 2%;
     background: lightblue;
     border: solid black 5px;
     border-radius: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 100px;
+    width:52%;
+    height: 22%;
+}
+.pytanie2{
+    margin-top: 2%;
+    background: lightblue;
+    border: solid black 5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    width:52%;
+    height: 40%;
 }
 }
 .td{
@@ -130,6 +143,7 @@ main{
     font-size: 50px;
     color: lightgreen;
 }
+
 .buttona{
 
     background: none;
@@ -150,6 +164,12 @@ main{
     outline: none;
     text-decoration: none;
 
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .buttona:hover{
     background: black;

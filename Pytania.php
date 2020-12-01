@@ -21,7 +21,7 @@
 <div class="pytanie">
 <h2>EE.09 2020 styczeń</h2>
 <article class="question">
-    <h3 class="question_title">Z9. DOM dostarcza metod i własności, które w języku JavaScript pozwalają na</h3>
+    <h3 class="tytul">Z9. DOM dostarcza metod i własności, które w języku JavaScript pozwalają na</h3>
     <ol type="a" class="question_answerList">
       <li class="odp">manipulowanie zadeklarowanymi w kodzie łańcuchami.</li>
       <li class="odp">wysłanie danych formularza bezpośrednio do bazy danych.</li>
@@ -36,12 +36,12 @@
     </ol>
   </article>
 </div>
-<div class="pytanie">
+<div class="pytanie2">
+
+<article class="question">
 <h2>EE.09 2020 styczeń</h2>
 <img src="obrzad/zadanie26.png" width="65%">
-<article class="question">
-    <h3 class="question_title">Z26. Witryna internetowa ma mieć przedstawioną strukturę bloków. Aby uzyskać ten układ, należy znacznikom
-sekcji przypisać właściwości w następujący sposób:</h3>
+    <h3 class="tytul">Z26. Witryna internetowa ma mieć przedstawioną strukturę bloków. Aby uzyskać ten układ, należy znacznikom sekcji przypisać właściwości w następujący sposób:</h3>
     <ol type="a" class="question_answerList">
       <li class="odp">float tylko dla bloku 5; clear dla bloku 2</li>
       <li class="odp">float tylko dla bloków: 3, 4; clear dla bloku 5</li>
