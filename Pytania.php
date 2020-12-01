@@ -12,7 +12,7 @@
 <header>
 <a class="karty" href="index.php">logowanie</a>
 <div><h1>Bartłomiej Basiński gr2</h1></div>
-<a class="karty" href="Pytania.php">pytania</a>
+
 </header>
 
 <aside>
