@@ -21,6 +21,12 @@
     padding: 10px;
     color: white;
 }
+.odp{
+    font-size: 20px;
+}
+.pop{
+    font-size: 23px;
+}
 body{
     display: grid;
     margin: 0;
@@ -28,10 +34,10 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 1fr auto;
     grid-template-areas:
-    "header header header aside"
-    " main main main aside"
-    " main main main aside"
-    " main main main aside"
+    "header header header header"
+    " main main main main"
+    " main main main main"
+    " main main main main"
     " footer footer footer  footer";
 }
 footer{
@@ -65,11 +71,14 @@ main{
     grid-area: main;
     background-color:lightgreen ;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
-
+.pytanie{
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 25%;
+}
 }
 .td{
     border: 1px solid black;
