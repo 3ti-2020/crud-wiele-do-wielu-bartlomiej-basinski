@@ -65,17 +65,20 @@ main{
     grid-area: main;
     background-color:lightgreen ;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
+}
 .td{
     border: 1px solid black;
     background:lightsteelblue;
     margin: 5px;
     padding: 10px;
 }
+
+
 
 .th{
     border: 1px solid black;
