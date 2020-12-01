@@ -19,7 +19,7 @@
 </aside>
 <main>
 <div class="pytanie">
-<h1>EE.09-SG-20.01</h1>
+
 <article class="question">
     <h3 class="question_title">Z9. DOM dostarcza metod i własności, które w języku JavaScript pozwalają na</h3>
     <ol type="a" class="question_answerList">
@@ -37,7 +37,7 @@
   </article>
 </div>
 <div class="pytanie">
-<h1>EE.09-SG-20.01</h1>
+
 <img src="obrzad/zadanie26.png">
 <article class="question">
     <h3 class="question_title">Z26. Witryna internetowa ma mieć przedstawioną strukturę bloków. Aby uzyskać ten układ, należy znacznikom
