@@ -1,6 +1,14 @@
 body{
     background:lightgreen;
-    display:  flex;
-    justify-content:center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "hd"
+    "ma"
+    ;
+}
+.element-text{
+flex-basis: 30%;
+font-size: 19px;
 }
