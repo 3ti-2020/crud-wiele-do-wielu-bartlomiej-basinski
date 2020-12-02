@@ -42,27 +42,24 @@
     " main main main main"
     }
   }
+  footer{
+      grid-area: footer;
+      background-color:lightgreen ;
+  }
 body{
     display: grid;
     margin: 0;
-    height: 150vh;
+    height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "header header header header"
     " main main main main"
     " main main main main"
     " main main main main"
-    " main main main main"
+    "footer footer footer footer"
 }
-footer{
-    grid-area:footer ;
-    background: lightsalmon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
+
 header{
     grid-area: header;
     background: lightcoral;

@@ -56,7 +56,13 @@
     </ol>
   </article>
 </div>
-
+<div class="pytanie">
+<img src="obrzad/obraczki.svg" >
+</div>
+<div class="pytanie">
+<img src="obrzad/ksztalty.svg" >
+</div>
 </main>
+<footer></footer>
 </body>
 </html>
