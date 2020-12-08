@@ -28,7 +28,7 @@
       <li class="odp">wysłanie danych formularza bezpośrednio do bazy danych.</li>
       <li class="odp">wykonywanie operacji na zmiennych przechowujących liczby</li>
       <li class="odp">pobieranie i modyfikowanie elementów strony wyświetlonej przez przeglądarkę.</li>
-      <details class="question_details">
+      <details class="details">
         <summary class="odp">sprawdź odpowiedź</summary> 
         <p class="pop"> odpowiedz: 
           <span class="pop">d</span> 
@@ -48,10 +48,51 @@
       <li class="odp">float tylko dla bloków: 3, 4; clear dla bloku 5</li>
       <li class="odp">float tylko dla bloku 2; clear dla bloków: 3, 4</li>
       <li class="odp">float tylko dla bloków: 2, 3, 4; clear dla bloku 5</li>
-      <details class="question_details">
+      <details class="details">
         <summary class="odp">sprawdź odpowiedź</summary> 
         <p class="pop"> odpowiedz: 
           <span class="pop">d</span> 
+        </p>
+      </details>
+    </ol>
+  </article>
+</div>
+<div class="pytanie2">
+
+<article class="question">
+<h2>EE.09 2020 czerwiec</h2>
+<img src="obrzad/zadanie24.png" width="65%">
+    <h3 class="tytul">Na rysunku przedstawiono strukturę bloków strony internetowej. Który z fragmentów formatowania strony
+pasuje do takiego układu? (Dla uproszczenia pominięto właściwości koloru tła, wysokości i czcionki:</h3>
+    <ol type="a" class="lista">
+      <li class="odp1">
+    #pierwszy {float:left; width:30%; } <br>
+#drugi {clear:both; width:70%; } <br>
+#trzeci {float:left; width:70%; } <br>
+#czwarty {clear:both; } <br>
+</li>
+      <li class="odp1">
+#pierwszy {float:left; width:30%;} <br>
+#drugi {float:left; width:70%;} <br>
+#trzeci {float:left; width:70%;} <br>
+#czwarty {clear:both; } <br>
+</li>
+      <li class="odp1">
+#pierwszy { width: 30%; } <br>
+#drugi { width: 70%; } <br>
+#trzeci { width: 70%; } <br>
+#czwarty { width: 100%; } <br>
+</li>
+      <li class="odp1">
+#pierwszy{float:left; width:30%;} <br>
+#drugi {clear:both; width:70%;} <br>
+#trzeci {clear:both; width:70%;} <br>
+#czwarty {float:left; width:100%;}<br>
+</li>
+      <details class="details">
+        <summary class="odp">sprawdź odpowiedź</summary> 
+        <p class="pop"> odpowiedz: 
+          <span class="pop">b</span> 
         </p>
       </details>
     </ol>

@@ -21,8 +21,19 @@
     padding: 10px;
     color: white;
 }
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .odp{
     font-size: 20px;
+}
+.odp1{
+    font-size: 20px;
+    flex-basis: 46%;
+    margin: 4px;
 }
 .pop{
     font-size: 23px;
@@ -67,7 +78,9 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-
+.details{
+    margin-right: 50%;
+}
 aside{
     grid-area: aside;
     background: lightyellow;
