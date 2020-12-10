@@ -42,9 +42,10 @@ if(!isset($_SESSION['zalogowany'])){
 </header>
 <aside>
 <h2>Insert:</h2>
-<form class="form" action="" method="POST">
-    <input class="text" type="text" name="" placeholder="Tytul"></br>
-    <input class="text" type="text" name="" placeholder="Treść"></br>
+<form class="form" action="insert_blog.php" method="POST">
+<input class="text" type="text" name="id_blog" placeholder="ID"></br>
+    <input class="text" type="text" name="tytul" placeholder="Tytul"></br>
+    <input class="text" type="text" name="tekst" placeholder="Treść"></br>
     
     <?php
     $servername="mysql-bartlomiejbasinski.alwaysdata.net";
@@ -53,7 +54,7 @@ if(!isset($_SESSION['zalogowany'])){
     $dbname="bartlomiejbasinski_lib";
     $conn = new mysqli($servername, $username, $password, $dbname);
     $result4 = $conn->query("SELECT * FROM `tagi`");
-    echo("<select name='rola'>");
+    echo("<select name='tag'>");
     while($wiersz2 = $result4->fetch_assoc()){
     echo("<option value='".$wiersz2['id']."' name='rola'>".$wiersz2['nazwa']." </option>");
 }
@@ -75,13 +76,14 @@ $dbname="bartlomiejbasinski_lib";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$result = $conn->query("SELECT * FROM tagi,tagi_blog,blog WHERE blog.id = tagi_blog.id_blog and tagi_blog.id_tag = tagi.id");
+$result = $conn->query("SELECT *, tagi_blog.id as id_del  FROM tagi,tagi_blog,blog WHERE blog.id = tagi_blog.id_blog and tagi_blog.id_tag = tagi.id");
 
     echo("<table class='table'>");
 echo("<tr class='tr'>
 <th class='th'>Tytuł</th>
 <th class='th'>Treść</th>
 <th class='th'>Tag</th>
+<th class='th'>usuń</th>
 </tr>");
 
 
@@ -93,6 +95,10 @@ while($row=$result->fetch_assoc()){
     echo("<td class='td'>".$row['tytul']."</td>");
     echo("<td class='td'>".$row['tekst']."</td>");
     echo("<td class='td'>".$row['nazwa']."</td>");
+    echo("<td class='td'>  <form class='form' action='delete_blog.php' method='POST'>
+
+    <input type='hidden' name='id_del' value='$row[id_del]' placeholder='ID'></br>
+    <div class='btnt'><input class='buttona' type='submit' value='Oddaj'></div> </td>");
     echo("</tr>");
 }
     
