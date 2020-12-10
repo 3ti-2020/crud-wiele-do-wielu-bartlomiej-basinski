@@ -9,5 +9,5 @@ $sql=" INSERT INTO blog (id, tytul ,tekst) values ('".$_POST['id_blog']."','".$_
 $sql2=" INSERT INTO tagi_blog (id, id_blog ,id_tag) values (NULL,'".$_POST['id_blog']."','".$_POST['tag']."')";
 mysqli_query($conn, $sql);
 mysqli_query($conn, $sql2);
-//header("Location:blog.php");
+header("Location:blog.php");
 ?>
