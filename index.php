@@ -13,6 +13,7 @@
 <a class="Github"href="https://github.com/3ti-2020/crud-wiele-do-wielu-bartlomiej-basinski/tree/main">Do Gtihuba</a>   
 <div><h1>Bartłomiej Basiński gr2</h1></div>
 <a class="karty" href="Pytania.php">Egzamin</a>
+<a class="karty" href="blog.php">Blog</a>
 </header>
 
 <aside>
