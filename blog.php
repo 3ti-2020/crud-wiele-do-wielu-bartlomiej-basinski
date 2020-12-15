@@ -46,17 +46,55 @@ $dbname="bartlomiejbasinski_lib";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$result = $conn->query("SELECT *  FROM tagi,tagi_blog,blog WHERE blog.id = tagi_blog.id_blog and tagi_blog.id_tag = tagi.id and blog.id = 1");
+$result = $conn->query("SELECT *  FROM  blog WHERE  blog.id = 1");
+$result2 = $conn->query("SELECT *  FROM tagi,tagi_blog where tagi_blog.id_tag = tagi.id and id_blog=1");
+$result3 = $conn->query("SELECT *  FROM  blog WHERE  blog.id = 2");
+$result4 = $conn->query("SELECT *  FROM tagi,tagi_blog where tagi_blog.id_tag = tagi.id and id_blog=2");
+$result5 = $conn->query("SELECT *  FROM  blog WHERE  blog.id = 3");
+$result6 = $conn->query("SELECT *  FROM tagi,tagi_blog where tagi_blog.id_tag = tagi.id and id_blog=3");
 
 while($row=$result->fetch_assoc()){
     echo("<div class='post'>");
     echo("<h1 class='tytul'>".$row['tytul']."</h1>");
-    echo("<div class='tag'>".$row['nazwa']."</div>");
+    echo("<div class='tag'>");
+    while($row2=$result2->fetch_assoc()){
+        echo("<div>".$row2['nazwa']."</div>");
+        }
+        echo("</div>");
+        echo("div class='teksty");
     echo("<div class='tekst'>".$row['tekst']."</div>");
     echo("</div>");
-}
+    echo("</div>");
     
-
+}
+while($row=$result3->fetch_assoc()){
+    echo("<div class='post'>");
+    echo("<h1 class='tytul'>".$row['tytul']."</h1>");
+    echo("<div class='tag'>");
+    while($row2=$result4->fetch_assoc()){
+        echo("<div>".$row2['nazwa']."</div>");
+        }
+        echo("</div>");
+        echo("div class='teksty");
+    echo("<div class='tekst'>".$row['tekst']."</div>");
+    echo("</div>");
+    echo("</div>");
+    
+}
+while($row=$result5->fetch_assoc()){
+    echo("<div class='post'>");
+    echo("<h1 class='tytul'>".$row['tytul']."</h1>");
+    echo("<div class='tag'>");
+    while($row2=$result6->fetch_assoc()){
+        echo("<div>".$row2['nazwa']."</div>");
+        }
+        echo("</div>");
+    echo("div class='teksty");
+    echo("<div class='tekst'>".$row['tekst']."</div>");
+    echo("</div>");
+    echo("</div>");
+    
+}
 
 
     ?>
