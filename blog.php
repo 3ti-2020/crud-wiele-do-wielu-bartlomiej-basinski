@@ -28,6 +28,7 @@
 ?>
 <input type="submit" value="szukaj">
 </form>
+<a class="Github"href="blog.php">Wszystkie</a>
 </header>
 
 <main>
@@ -56,6 +57,11 @@ $result8 = $conn->query("SELECT *  FROM tagi,tagi_blog where tagi_blog.id_tag = 
 $result9 = $conn->query("SELECT *  FROM  blog WHERE  blog.id = 5");
 $result10 = $conn->query("SELECT *  FROM tagi,tagi_blog where tagi_blog.id_tag = tagi.id and id_blog=5");
 
+$result11 = $conn->query("SELECT *  FROM  blog WHERE  blog.id = 6");
+$result12 = $conn->query("SELECT *  FROM tagi,tagi_blog where tagi_blog.id_tag = tagi.id and id_blog=6");
+
+$result13 = $conn->query("SELECT *  FROM  blog WHERE  blog.id = 7");
+$result14 = $conn->query("SELECT *  FROM tagi,tagi_blog where tagi_blog.id_tag = tagi.id and id_blog=7");
 
 while($row=$result->fetch_assoc()){
     echo("<div class='post'>");
@@ -118,6 +124,34 @@ while($row=$result9->fetch_assoc()){
     echo("<h1 class='tytul'>".$row['tytul']."</h1>");
     echo("<div class='tag'>");
     while($row2=$result10->fetch_assoc()){
+        echo("<div>".$row2['nazwa']."</div>");
+        }
+        echo("</div>");
+    echo("<div class='teksty>");
+    echo("<div class='tekst'>".$row['tekst']."</div>");
+    echo("</div>");
+    echo("</div>");
+    
+}
+while($row=$result11->fetch_assoc()){
+    echo("<div class='post'>");
+    echo("<h1 class='tytul'>".$row['tytul']."</h1>");
+    echo("<div class='tag'>");
+    while($row2=$result12->fetch_assoc()){
+        echo("<div>".$row2['nazwa']."</div>");
+        }
+        echo("</div>");
+    echo("<div class='teksty>");
+    echo("<div class='tekst'>".$row['tekst']."</div>");
+    echo("</div>");
+    echo("</div>");
+    
+}
+while($row=$result13->fetch_assoc()){
+    echo("<div class='post'>");
+    echo("<h1 class='tytul'>".$row['tytul']."</h1>");
+    echo("<div class='tag'>");
+    while($row2=$result14->fetch_assoc()){
         echo("<div>".$row2['nazwa']."</div>");
         }
         echo("</div>");

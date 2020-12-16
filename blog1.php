@@ -28,6 +28,7 @@
 ?>
 <input type="submit" value="szukaj">
 </form>
+<a class="Github"href="blog.php">Wszystkie</a>
 </header>
 
 <main>
