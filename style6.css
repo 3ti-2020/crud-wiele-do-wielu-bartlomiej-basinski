@@ -1,0 +1,204 @@
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 5rem;
+    border: 3px solid red;
+    border-radius: 7px;
+    background: darkgray;
+    color: white;
+    font-size:  1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.td_s{
+    border: 1px solid black;
+    background:red;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+}
+.tag{
+    margin-bottom: 60px;
+}
+.post{
+    background: lightgrey;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex-basis: 50%;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.teksty{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    display: grid;
+    margin: 0;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-areas:
+    "header header header header "
+    " main main main main "
+    " main main main main "
+    " main main main main "
+    " main main main main";
+}
+footer{
+    grid-area:footer ;
+    background: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+header{
+    grid-area: header;
+    background: lightcoral;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+main{
+    grid-area: main;
+    background-color:lightgreen ; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.td{
+    border: 1px solid black;
+    background:lightsteelblue;
+    margin: 5px;
+    padding: 10px;
+}
+
+.th{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 25px;
+    background: lightcoral;
+    font-size: 25px;
+}
+.tr{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 25px;
+    
+    font-size: 25px;
+}
+.h{
+    font-size: 50px;
+    color: lightgreen;
+}
+.buttona{
+
+    background: none;
+    border: 3px solid red;
+    outline: none;
+    background: darkgray;
+    padding: 15px;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+
+}
+.buttona:hover{
+    background: black;
+    }
+.btnCol{
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 7px;
+    background: darkgray;
+    color: white;
+    font-size:  1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    
+}
+.btnCol:hover{
+background: black;
+}
+.karty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 5rem;
+    border: 3px solid darkgoldenrod;
+    border-radius: 7px;
+    background: darkgray;
+    color: white;
+    font-size:  1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+.karty:hover{
+    background: black;
+    }
+
+.Github{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 8rem;
+    border: 3px solid darkgoldenrod;
+    border-radius: 7px;
+    background: darkgray;
+    color: white;
+    font-size:  1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none; 
+}
+.Github:hover{
+    background: black;
+    }
+.insert{
+        display: flex;
+        flex-direction: column;
+}
+.btnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
